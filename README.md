@@ -78,12 +78,19 @@ Notice the difference in the edge aliasing and shadows of the first two images
 16 samples per pixel and 16 shadow rays per light source
 <br><br><br>
 
+<img src="./Results/myScene2.png" width="1000">
+
+Video animation of this scene can be found [here](./Results/my_animation.mp4) (GitHub won't embed the mp4)
+<br><br><br>
+
+<!---
 <video width="1000" controls>
   <source src="./Results/my_animation.mp4" type="video/mp4">
 </video>
 
 Animated video made up of [individually rendered frames](./Results/AnimationImages/)
 <br><br><br>
+-->
 
 <img src="./Results/myScene1.png" width="1000">
 Scene with multiple colored light sources and a textured wrapped object
