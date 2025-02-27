@@ -59,7 +59,7 @@ glm::vec3 scene::rayTrace(glm::vec3 eye, glm::vec3 dir, int recurseDepth)
 	answer += myMaterials.at(matIndex).diffuseCol * ambLight;
 
 
-	//DIFUSE AND SPECULAR
+	//DIFFUSE AND SPECULAR
 	//
 	//iterate through all lights
 	//if the light can see the surface point,
@@ -106,7 +106,7 @@ glm::vec3 scene::rayTrace(glm::vec3 eye, glm::vec3 dir, int recurseDepth)
 	answer += specularLight;
 
 
-	//RELECTION AND REFRACTION
+	//REFLECTION AND REFRACTION
 	//
 	//variables for reflection and refraction
 	glm::vec3 relectColor(0.0f);
@@ -121,7 +121,7 @@ glm::vec3 scene::rayTrace(glm::vec3 eye, glm::vec3 dir, int recurseDepth)
 	//put a limit on the depth of recursion
 	if (recurseDepth < maxRecurse) {
 	//reflect our view across the normal
-	//recusively raytrace from the surface point along the reflected view
+	//recursively raytrace from the surface point along the reflected view
 	//add the color seen times the reflective color
 		recurseDepth += 1;
 		reflectedRay = glm::normalize(dir - 2.0f * dot(dir, normal) * normal);

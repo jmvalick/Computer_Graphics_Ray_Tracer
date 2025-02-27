@@ -19,7 +19,7 @@ triangle::triangle(glm::vec3 p0, glm::vec3 p1, glm::vec3 p2, float tx0, float tx
 
 float triangle::testIntersection(glm::vec3 eye, glm::vec3 dir)
 {
-	//see the book/slides for a description of how to use Cramer's rule to solve
+	//see the book/slides for a description of how to use Camera's rule to solve
 	//for the intersection(s) of a line and a plane, implement it here and
 	//return the minimum distance (if barycentric coordinates indicate it hit
 	//the triangle) otherwise 9999999
