@@ -13,11 +13,9 @@ This project is the culmination of two separate projects. The first part was jus
 - Build with CMAKE using the [CMakeList](./Ray_Tracer_OpenMP/PA3_Starter/CMakeLists.txt) file
 - Open in Visual Studio
 - Set [Project_3](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/) as startup project
-- Change the input scene file to one of the [Sample Scenes](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Media/SampleScenes/) .ray files on line 40 of [Project3.cpp](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/Project3.cpp)
-- Run through Visual Studio
-
+- Change the input scene file to one of the [Sample Scenes](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Media/SampleScenes/) .ray files on [line 40 of Project3.cpp](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/Project3.cpp#L40)
+- Run through Visual Studio <br>
 	or
-
 - Run the [Sample Executable](./Ray_Tracer_OpenMP/PA3_Starter/Build/Project_3.exe)
 
 
@@ -28,36 +26,36 @@ Since this was a class project. Most of this project is starter code. The actual
 
 Implementations made:
 - [Project3.cpp](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/Project3.cpp)
-	- lines 191-240:
+	- [lines 191-240](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/Project3.cpp#L191-L240):
 		- for each pixel:
 			- calculate the direction through the pixel
 			- call rayTrace
 			- take multiple samples per pixels
 			- add pixel color to frame buffer for rendering
-	- lines 11,23-35,316-317:
+	- lines [11](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/Project3.cpp#L11), [23–35](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/Project3.cpp#L23-L35), [316–317](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/Project3.cpp#L316-L317)
 		- animation loop (currently not in use)
 - [scene.cpp](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/scene.cpp)
-	- lines 15-162:
+	- [lines 15-162](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/scene.cpp#L15-L162):
 		- rayTrace algorithm
 		- lighting (ambient, diffuse, specular)
 		- recursive reflection and refraction
-	- lines 249-255:
+	- [lines 249-255](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/scene.cpp#L249-L255):
 		- camera movement for animation (currently not in use)
-	- lines 360-367:
+	- [lines 360-367](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/scene.cpp#L360-L367):
 		- sphere movement for animation (currently not in use)
 - [sphere.cpp](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/sphere.cpp)
-	- lines 18-48:
+	- [lines 18-48](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/sphere.cpp#L18-L48):
 		- sphere testIntersection implemented
-	- line 56-61:
+	- [line 56-61](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/sphere.cpp#L56-L61):
 		- normal calculated
-	- lines 66-100:
+	- [lines 66-100](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/sphere.cpp#L66-L100):
 		- sphere texture coordinates implemented
-	- lines 92-96:
+	- [lines 92-96](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/sphere.cpp#L92-L96):
 		- texture rotation for animation (currently not in use)
 - [triangle.cpp:](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/triangle.cpp)
-	- lines 26-65:
+	- [lines 26-65](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/triangle.cpp#L26-L65):
 		- triangle testIntersection implemented
-	- lines 86-109:
+	- [lines 86-109](./Ray_Tracer_OpenMP/PA3_Starter/Project_3/Sources/triangle.cpp#L86-L109):
 		- triangle texture coordinates implemented
 
 
@@ -71,10 +69,12 @@ The report on parallel processing can be found here: [Report](./Report/final_pro
 Notice the difference in the edge aliasing and shadows of the first two images
 
 <img src="./Results/final_out_1sample_1shadow.png" width="1000">
-1 samples per pixel and 1 shadow ray per light source
+
+1 sample per pixel and 1 shadow ray per light source
 <br><br><br>
 
 <img src="./Results/final_out_16samples_16shadow.png" width="1000">
+
 16 samples per pixel and 16 shadow rays per light source
 <br><br><br>
 
@@ -93,4 +93,5 @@ Animated video made up of [individually rendered frames](./Results/AnimationImag
 -->
 
 <img src="./Results/myScene1.png" width="1000">
+
 Scene with multiple colored light sources and a textured wrapped object
